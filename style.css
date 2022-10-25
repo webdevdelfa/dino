@@ -141,8 +141,9 @@ h3 {
 }
 
 .dino-item.active .dino-img {
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
+    align-self: flex-start;
 }
 
 .dino-item.active .teranozavr-img {
@@ -198,7 +199,7 @@ h3 {
     }
 
     30% {
-        transform: rotate(-20deg);
+        transform: rotate(-5deg) translateX(-10%);
     }
 
 
@@ -207,7 +208,7 @@ h3 {
     }
 
     100% {
-        transform: rotate(-20deg);
+        transform: rotate(-5deg);
     }
 }
 
@@ -246,4 +247,10 @@ h3 {
 
 .dino-btn:hover {
     background-color: #c4740c;
+}
+
+@media (max-width: 480px) {
+    .dino-list {
+        font-size: 14px;
+    }
 }
